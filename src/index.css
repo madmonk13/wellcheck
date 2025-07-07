@@ -5,9 +5,67 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    #house {
+      font-size: 10vh;
+      margin-bottom: -4vh;
+    }
+
+    #wellShaft {
+      border-top: 0.5vh solid green;
+      display: inline-block;
+      width: 100vw;
+      height: 50vh;
+      position: relative;
+      margin: 1vh auto;
+      text-align: left;
+      vertical-align: baseline;
+      color: #000;
+      font-weight: bold;
+      text-shadow: #fff 0 0 1vh;
+      background:
+        /* Pipe stripe */
+        linear-gradient(
+          to right,
+          transparent 48%,
+          #ccc 49%,
+          #ccc 51%,
+          transparent 51%
+        ),
+        /* Soil layers (topsoil, subsoil, bedrock) */
+        linear-gradient(
+          to bottom,
+          #8B5E3C 0%,
+          #A9745F 33%,
+          #C2B280 66%,
+          #9E8C6C 100%
+        ),
+        /* Subtle texture */
+        repeating-linear-gradient(
+          to bottom,
+          rgba(255,255,255,0.03),
+          rgba(255,255,255,0.03) 4px,
+          rgba(0,0,0,0.03) 4px,
+          rgba(0,0,0,0.03) 8px
+        );
+
+      background-blend-mode: normal, normal, multiply;
+      background-size: 100% 100%, 100% 100%, 100% 100%;
+
+      #howDeep {
+        position: absolute;
+        bottom: 0;
+      }
+
+      #waterLevel {
+        display: inline-block;
+        width: 100%;
+        background-color: lightblue;
+        height: 50%;
+        position:absolute;
+        bottom: 0;
+        left: 0;
+        opacity: 0.8;
+      }
+    }
 }
