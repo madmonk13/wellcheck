@@ -7,12 +7,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
     #house {
-      font-size: 10vh;
-      margin-bottom: -4vh;
+      font-size: 20vh;
+      margin-bottom: -6vh;
     }
 
     #wellShaft {
       border-top: 0.5vh solid green;
+      border-bottom: 1px solid #000;
       display: inline-block;
       width: 100vw;
       height: 50vh;
@@ -27,8 +28,8 @@ body {
         /* Pipe stripe */
         linear-gradient(
           to right,
-          transparent 48%,
-          #ccc 49%,
+          transparent 50%,
+          #ccc 50%,
           #ccc 51%,
           transparent 51%
         ),
