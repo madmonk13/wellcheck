@@ -25,7 +25,11 @@ function App() {
   return (
     <div className="App">
       <h1>Well Check</h1>
-      <div id="house">&#127968;</div>
+      <div id="house">
+        <div className='tree'>&#127795;</div>
+        &#127968;
+        <div className='tree'>&#127795;</div>
+        </div>
         <div id="wellShaft">
           <div id="waterLevel" style={{
             height: `${((depth-table)/depth)*100}%`

@@ -7,8 +7,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
     #house {
-      font-size: 20vh;
-      margin-bottom: -6vh;
+      font-size: 30vw;
+      line-height: 15vw;
+      .tree {
+        font-size: 20vw;
+        display: inline;
+      }
     }
 
     #wellShaft {
