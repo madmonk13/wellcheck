@@ -6,14 +6,32 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-    #house {
-      font-size: 30vw;
-      line-height: 15vw;
-      .tree {
-        font-size: 20vw;
-        display: inline;
-      }
+
     }
+
+    @media ( min-width: 800px ) {
+      #house {
+        font-size: 15vw;
+        line-height: 8vw;
+          .tree {
+            font-size: 10vw;
+            display: inline;
+          }
+        }
+    }
+
+    @media ( max-width: 799px ) {
+      #house {
+        font-size: 30vw;
+        line-height: 15vw;
+          .tree {
+            font-size: 20vw;
+            display: inline;
+          }
+        }
+    }
+
+
 
     #wellShaft {
       border-top: 0.5vh solid green;
@@ -73,4 +91,3 @@ body {
         opacity: 0.8;
       }
     }
-}
